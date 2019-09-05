@@ -52,6 +52,9 @@ public class UtilityScript : MonoBehaviour
          Console.WriteLine("Unable to convert '{0}'", value);
    }
    //this void parses unicode to int32 values
+
+   //using System;
+   //using System.Globalization;
    public static void Main3()
    {
       string value;
