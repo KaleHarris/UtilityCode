@@ -85,4 +85,26 @@ public class UtilityScript : MonoBehaviour
          Console.WriteLine("Unable to parse '{0}'.", value);      
       }     
    }
+   //below is an example of a struct
+
+   //a struct acts as sort of a lighter version of a class. you can define
+   //its properties and then use them elsewhere in the code, as is such in Main4
+   struct Point2D {
+      public int X;
+      public int Y;
+      public void AddPoint(Point2D anotherPoint) {
+         this.X = this.X + anotherPoint.X;
+         this.Y = this.Y + anotherPoint.Y;
+      }
+   }
+   public static void Main4() {
+      Point2D myPoint = new Point2D();
+      myPoint.X = 10;
+      myPoint.Y = 20;
+      Point2D anotherPoint = new Point2D();
+      anotherPoint.X = 5;
+      anotherPoint.Y = 15;
+      myPoint.AddPoint(anotherPoint);
+   }
+   
 }
