@@ -106,5 +106,14 @@ public class UtilityScript : MonoBehaviour
       anotherPoint.Y = 15;
       myPoint.AddPoint(anotherPoint);
    }
+
+   //a simple foreach loop I find myself using frequently. finds the smallest or largest item
+   //in an collection if needed. a simple lightweight way to sort data, especially in arrays.
+   int biggestVariable = 0;
+   foreach (Type i in collection){
+      if (i > biggestVariable){
+         biggestVariable = i;
+      }
+   }
    
 }
